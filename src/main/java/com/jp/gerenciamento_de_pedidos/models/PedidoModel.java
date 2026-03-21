@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 public class PedidoModel {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "dataPedido")
     private LocalDateTime data;
